@@ -1,0 +1,104 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  color: #e2e8f0;
+  transition: 0.3s ease;
+}
+
+/* LIGHT MODE BACKGROUND (default) */
+body {
+  background: linear-gradient(
+    to left bottom,
+    #391b8c,
+    #3c1a99,
+    #4018a7,
+    #4315b4,
+    #4710c2,
+    #4e1bbe,
+    #5424bb,
+    #592bb7,
+    #5d39a1,
+    #5f458b,
+    #5e4e74,
+    #5a575e
+  );
+}
+/* DARK MODE OVERRIDE */
+body.dark {
+  background: #0b1220;
+  color: #f1f5f9;
+}
+.hero {
+  text-align: center;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  margin-bottom: 20px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+/* Sections */
+body.dark section {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+section {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+
+  background: rgba(255, 253, 253, 0.356); /* semi-transparent white */
+  border-radius: 12px;
+
+  backdrop-filter: blur(10px); /* glass effect */
+  -webkit-backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Headings */
+h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.toggle-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+  background: #38bdf8;
+  color: black;
+
+  font-weight: bold;
+  z-index: 999;
+}
+
+.toggle-btn:hover {
+  opacity: 0.8;
+}
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
